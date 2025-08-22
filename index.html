@@ -838,8 +838,25 @@
                 });
             }
             
-            // Scroll to results
-            resultsSection.scrollIntoView({ behavior: 'smooth' });
+            // Smooth scroll to results with a slight delay to ensure content is rendered
+            setTimeout(() => {
+                // Get the position of the results section
+                const resultsTop = resultsSection.offsetTop;
+                // Scroll with some offset to show a bit of context above
+                const scrollOffset = resultsTop - 50;
+                
+                window.scrollTo({
+                    top: scrollOffset,
+                    behavior: 'smooth'
+                });
+                
+                // Alternative fallback method
+                // resultsSection.scrollIntoView({ 
+                //     behavior: 'smooth', 
+                //     block: 'start',
+                //     inline: 'nearest'
+                // });
+            }, 300);
         }
 
         function createFileSection(fileData, fileNumber) {
