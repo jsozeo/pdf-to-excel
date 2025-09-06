@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Évite l'indexation des pages d'auth et d'API
+Disallow: /login
+Disallow: /connexion
+Disallow: /signup
+Disallow: /inscription
+Disallow: /api/
+
+Sitemap: https://convertir-releve-compte-pdf-excel.com/sitemap.xml
