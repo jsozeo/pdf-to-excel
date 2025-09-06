@@ -1,0 +1,56 @@
+# Frontend files for PDF to Excel converter
+# Only keep essential frontend files at root
+
+# Ignore all other projects
+BSIGNAL/
+CARTA PMT/
+CHROME*
+CORE*
+CREWAI/
+CURSOR*
+GOOGLE*
+MIXED*
+Salesforce*
+XSS/
+autom-phantom/
+chrome*/
+get-upwork/
+getPage*/
+jupyter*/
+kinde/
+lambda*/
+local*/
+node_modules/
+package*.json
+passerelle*/
+pdf-bank*/
+pdf-to-excel-clean/
+pdf-to-xls/
+pdf-to-xlsx-front/
+preCRM*/
+public/
+pulsegate*/
+pulsgate*/
+src/
+structure*/
+superclosing/
+vercel*/
+vue*/
+
+# OS and dev files
+.DS_Store
+*.log
+.env*
+*secret*
+*private*
+*.key
+*.pem
+
+# Other files
+babel.config.js
+jsconfig.json
+vue.config.js
+gitconfig
+logo.png
+display*.png
+README.md
